@@ -63,6 +63,33 @@ kubectl create clusterrolebinding kubernetes-dashboard --clusterrole=cluster-adm
 az aks browse -g <resource-group> -n <clustername>
 ```
 
+## basic k8s components
 
+* default backend
+* namespaces
+* rbac - setup
+* configmap
+* ingress deployment
+* ingress service
+* ingress
+* certificate manger (using lets encrypt)
+* staging certificate
+* production certificate
+* certificate manager
+* storage setup
+
+## customized container deployments
+
+* frontend
+* backend
+* ...
+
+# docker
+
+## create container registry
+
+## create docker images
+
+## push docker container to container registry
 
 
