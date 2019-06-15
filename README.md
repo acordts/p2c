@@ -13,8 +13,9 @@ open powersell as administrator and enter
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
-open microsoft store
-search for linux, choose distribution and install
+* open microsoft store
+* search for linux, choose distribution and install it
+* time to get a coffee
 
 ## install azure-cli
 
@@ -23,6 +24,7 @@ source: https://docs.microsoft.com/de-de/cli/azure/install-azure-cli-apt?view=az
 open linux distribution bash
 
 ```
+
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
@@ -36,7 +38,7 @@ time to finish your coffee you got earlier
 * search for kubernetes services
 * create kubernetes cluster
 * review + create
-* time to get a coffee
+
 
 ## inital kubectl for cli
 
