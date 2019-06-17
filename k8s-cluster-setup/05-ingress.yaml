@@ -1,0 +1,31 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-nginx
+  namespace: p2c
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+spec:
+  # enable this part after deploying the cert-manager
+  #tls:
+  #- hosts:
+  #  - example.com
+  #  secretName: p2c-staging-tls
+  rules:
+  # update hostname
+  - host: example.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: default-backend
+          servicePort: 80
+      - path: /api
+        backend:
+          serviceName: default-backend
+          servicePort: 8000
+      - path: /check
+        backend:
+          serviceName: default-backend
+          servicePort: 80

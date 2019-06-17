@@ -64,3 +64,18 @@ spec:
             timeoutSeconds: 1
           securityContext:
             runAsNonRoot: false
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ingress-nginx
+  namespace: p2c
+spec:
+  ports:
+    - port: 80
+      name: http
+    - port: 443
+      name: https
+  selector:
+    app: ingress-nginx
+  type: LoadBalancer            
